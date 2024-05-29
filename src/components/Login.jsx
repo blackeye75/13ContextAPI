@@ -5,7 +5,7 @@ import userContext from "../context/userContext";
 function Login() {
   const [userName, setuserName] = useState("");
   const [password, setpassword] = useState("");
-  const {setuser}=useContext(userContext)
+  const {setuser}=useContext(userContext);
   const handelSubmit = (e) => {
     e.preventDefault()
     setuser({userName,password})
